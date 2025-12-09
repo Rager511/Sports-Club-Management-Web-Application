@@ -1,0 +1,183 @@
+/* ===== Global ===== */
+html {
+    font-size: 62.5%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    background: #1E2026; /* Darker background for better contrast */
+    color: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* ===== Login Page ===== */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #252730, #1c1f27);
+}
+
+#container {
+    width: 400px;
+    background: #2c2f3a;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* ===== Header & Logo ===== */
+.login-header {
+    margin-bottom: 20px;
+}
+
+
+.login-header .logo img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #4CAF50;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
+}
+
+footer {
+    background: #333;  
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+.login-header h2 {
+    font-size: 2.2rem;
+    color: #7CFC00;
+    margin: 10px 0;
+}
+
+.login-header .description {
+    font-size: 1.3rem;
+    color: #bbb;
+}
+
+/* ===== Input Fields ===== */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #373e4a;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #4a4f5b;
+}
+
+.input-group-addon {
+    background: #4a4f5b;
+    padding: 10px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.input-group .form-control {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 10px;
+    font-size: 1.4rem;
+    color: #fff;
+    background: #373e4a;
+}
+
+.input-group .form-control::placeholder {
+    color: #aaa;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* ===== Links ===== */
+.login-bottom-links {
+    margin-top: 20px;
+}
+
+.login-bottom-links .link {
+    color: #bbb;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+.login-bottom-links .link:hover {
+    color: #4CAF50;
+}
+
+/* ===== Progress Bar (optional) ===== */
+.login-progressbar-indicator {
+    display: none; /* Hide for now */
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+    #container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .login-header h2 {
+        font-size: 2rem;
+    }
+
+    .input-group .form-control {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        font-size: 1.3rem;
+    }
+}
